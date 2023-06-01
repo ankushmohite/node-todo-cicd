@@ -16,3 +16,4 @@ Run these commands:
 or docker composes
 
 run
+install
