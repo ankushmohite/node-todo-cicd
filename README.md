@@ -13,7 +13,4 @@ Run these commands:
 
 `node app.js`
 
-or docker composes up 
-
-run
-installs
+added some changes
