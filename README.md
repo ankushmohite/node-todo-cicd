@@ -13,7 +13,7 @@ Run these commands:
 
 `node app.js`
 
-or docker composes
+or docker composes up 
 
 run
 installs
