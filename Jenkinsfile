@@ -19,8 +19,8 @@ pipeline {
         stage('Login and push Image'){
             steps{
                 echo 'Logging in to docker hub and pushing iamge...'
-                withCredentials([usernamePassword(credentialsId:'dockerhub',passwordVariable:'dockerHubPassword',usernameVariable:'dockerHubUser')]){
-                    sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubpassword}"
+                withCredentials([usernamePassword(credentialsID:'dockerhub',passwordVariable:'dockerHubPassword',usernameVariable:'dockerHubUser')]){
+                    sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
                     sh "docker push ankushmohite/node-todo-cicd:latest"
                 }
             }
